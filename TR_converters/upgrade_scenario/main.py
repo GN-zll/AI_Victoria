@@ -30,7 +30,7 @@ def get_good_scenario(bad_scenario, output_path):
         "modelUri": "gpt://b1g72uajlds114mlufqi/yandexgpt/latest",
         "completionOptions": {
             "stream": False,
-            "temperature": 0.3,
+            "temperature": 0.1,
             "maxTokens": "2000"
         },
         "messages": [

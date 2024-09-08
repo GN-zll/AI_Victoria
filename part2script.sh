@@ -9,4 +9,7 @@ path2_sc="../../final_texts/final_scenario.txt"
 
 python3 TR_converters/upgrade_transcription/main.py "$path1_tr" "$path2_tr"
 
-python3 TR_converters/upgrade_scenario/main.py "$path1_sc" "$path2_sc"
+#python3 TR_converters/upgrade_scenario/main.py "$path1_sc" "$path2_sc"
+
+python3 from_transcription_to_protocol/main.py
+python3 from_transcription_to_protocol/other_part_of_core.py

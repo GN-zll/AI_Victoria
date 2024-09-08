@@ -5,14 +5,13 @@ import os
 def get_path(_path):
     return os.path.join(os.path.dirname(__file__), _path)
 
-doc = Document('transcription.docx')
 
 # Инициализируем переменную для хранения текста
 transcription_text = ""
 
 # Проходимся по каждому параграфу и добавляем его в переменную
-for paragraph in doc.paragraphs:
-    transcription_text += paragraph.text + "\n"
+with open(get_path('../final_texts/final_transcription.txt'), 'r') as tr_file:
+    transcription_text = tr_file.read()
 
 IAM_KEY = ''
 
@@ -56,7 +55,7 @@ def get_answer(role_text, official_flag):
     
 def generate(official_flag):
     role_text = ''
-    with open(get_path("official_prompt.txt") if official_flag else "unofficial_prompt.txt" , 'r') as text_file:
+    with open(get_path("official_prompt.txt") if official_flag else get_path("unofficial_prompt.txt") , 'r') as text_file:
         role_text = text_file.read()
     get_answer(role_text, official_flag)
     
