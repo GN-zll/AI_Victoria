@@ -1,0 +1,5 @@
+API_TOKEN = '7413677759:AAGH0rr52kFSL8GGRT7ABtr0CjLzPSC2JOw'
+DOWNLOAD_DIR = '/Users/iabeletsky/Desktop/tmpvoices'
+FORMATTED_DIR = '/Users/iabeletsky/Desktop/mp3_files' 
+DATABASE_PATH = '/Users/iabeletsky/Desktop/users_info.db'
+RESULT_PATH = '/Users/iabeletsky/Desktop/results'
